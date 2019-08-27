@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import faker from 'faker';
-import GiphyAPI from '../../giphy';
 
 class Comment extends Component {
     constructor(props){
@@ -19,7 +17,7 @@ class Comment extends Component {
             image = <img alt="avatar" src={this.props.avatar} />;
             authorDate = (
                 <div>
-                    <a className="author">{this.props.name}</a>
+                    <a href='#' className="author">{this.props.name}</a>
                     <div className="metadata">
                         <span className="date">{this.props.time}</span>
                     </div>
@@ -28,13 +26,13 @@ class Comment extends Component {
             commentClass = 'comment';
         }
         if (this.props.giphy){
-            text = <img src={this.props.text} />;
+            text = <img alt='giphy' src={this.props.text} />;
         } else {
             text = this.props.text;
         }
         return (
             <div className={commentClass}>
-                <a className="avatar">
+                <a href='#' className="avatar">
                     {image}
                 </a>
                 <div className="content">

@@ -1,6 +1,6 @@
 ## Sleeper Chat by Tyler Kung
 
-Project is live on [Netlify](https://festive-raman-9544b0.netlify.com/).
+Project is live on [Netlify](https://xenodochial-pare-3b43b5.netlify.com/).
 
 ### To run locally
 
@@ -10,8 +10,8 @@ From base directory run `npm install`, then launch with `npm start`.
 
 The project contains the following features:
 
-1) User can edit text, text color, and BG color
-2) BG color field will check and sanitize if its a valid hexcolor
-3) Text string is reformatted if spaces are included to pass to URL
+1) Random feed of fake "comments"
+2) User can submit comments
+3) If user types '/giphy', a random Giphy GIF will send.
 
 Front-end bootstrapped with create-react-app, semantic-ui for user interface.
